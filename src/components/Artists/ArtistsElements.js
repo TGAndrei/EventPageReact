@@ -8,12 +8,12 @@ export const ArtistsContainer = styled.div`
   align-items: center;
   background: #010606;
 
-  @media screen and (max-width: 768px) {
-    height: 1500px;
+  @media screen and (max-width: 1000px) {
+    height: 1600px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1600px;
+    height: 1700px;
   }
 `;
 
@@ -27,7 +27,7 @@ export const ArtistsWrapper = styled.div`
   /* padding: 0 50px; */
 
   @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -52,7 +52,7 @@ export const ArtistsCard = styled.div`
     transition: all 0.2s ease-in-out;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1019px) {
     max-height: 350px;
   }
 `;
@@ -71,7 +71,7 @@ export const ArtistsH1 = styled.h1`
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 `;
 
@@ -87,22 +87,38 @@ export const ArtistsP = styled.p`
   color: #fff;
 `;
 
+export const ArtistsMore = styled.div`
+  margin-top: 60px;
+  margin-bottom: -40px;
+  /* max-width: 1000px; */
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 0 20px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`;
 export const ArtistsH3 = styled.h3`
   font-size: 1rem;
   margin-bottom: 16px;
   color: #fff;
   cursor: context-menu;
+  text-align: center;
   &:hover {
     transform: scale(1.4);
     transition: all 0.2s ease-in-out;
     color: #01bf71;
   }
-`;
 
-export const ArtistsMore = styled.div`
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
+  @media screen and (max-width: 1200px) {
+    font-size: 0.8rem;
+  }
 `;

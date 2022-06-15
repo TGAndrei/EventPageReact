@@ -10,6 +10,7 @@ import {
 } from "../components/InfoSection/Data";
 import Prices from "../components/Prices";
 import Artists from "../components/Artists";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +25,9 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne} />
-      {/* <InfoSection {...homeObjTwo} /> */}
       <Prices />
       <Artists />
-      <InfoSection {...homeObjThree} />
+      <Footer />
     </>
   );
 };

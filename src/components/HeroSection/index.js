@@ -2,6 +2,7 @@ import { hover } from "@testing-library/user-event/dist/hover";
 import React, { useState } from "react";
 import Video from "../../videos/video.mp4";
 import { Button } from "../ButtonElements";
+
 import {
   HeroContainer,
   HeroBg,
@@ -12,6 +13,7 @@ import {
   BtnHeroWrapper,
   ArrowForward,
   ArrowRight,
+  BtnLink,
 } from "./HeroElements";
 
 const HeroSection = () => {
@@ -28,15 +30,16 @@ const HeroSection = () => {
       <HeroContent>
         <HeroP> Are you ready for </HeroP>
         <HeroH1> zGeneration Festival?</HeroH1>
-        <BtnHeroWrapper>
+        <BtnHeroWrapper href="/tickets">
           <Button
-            to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+            <BtnLink to="/tickets">
+              Buy Tickets {hover ? <ArrowForward /> : <ArrowRight />}
+            </BtnLink>
           </Button>
         </BtnHeroWrapper>
       </HeroContent>
